@@ -10,5 +10,5 @@ Sphere New(double);
 double Area(Sphere);
 double Volume(Sphere);
 void FreeSphere(Sphere);
-
+void ShowSphere(Sphere);
 #endif

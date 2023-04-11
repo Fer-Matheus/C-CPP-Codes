@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "Sphere.h"
 #define pi 3.14
 
@@ -19,4 +20,8 @@ double Volume(Sphere sphere)
 void FreeSphere(Sphere sphere)
 {
     free(sphere);
+}
+
+void ShowSphere(Sphere sphere){
+  printf("Radius: %.2lf\n", sphere->radius);
 }
