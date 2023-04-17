@@ -1,13 +1,21 @@
 #ifndef LINKEDLIST_H
-#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
+
+typedef struct aux{
+  int id;
+  No next;
+}*No;
 
 typedef struct list {
-	int id;
-	LinkedList *next;
+	int size;
+	No first;
 }*LinkedList;
 
-LinkedList New(LinkedList,int);
-int AddItem(LinkedList,int);
+LinkedList InitList();
+LinkedList AddItem(LinkedList,int);
 void ShowList(LinkedList);
-void FreeItem(LinkedList, int);
-int IsHere(LinkedList, int);:
+void DeleteItem(LinkedList, int);
+void FreeLinkedList(LinkedList);
+int IsHere(LinkedList, int);
+
+#endif
